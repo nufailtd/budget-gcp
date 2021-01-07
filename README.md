@@ -46,6 +46,8 @@ The example below can be run by anyone, just click the button and you're good to
 However, understanding the terminology used in subsequent section requires some basic knowledge and/or prior experience of deploying an application.  
 You may safely skim if all this is new to you.
 
+[![Open this project in Cloud Shell](http://gstatic.com/cloudssh/images/open-btn.png)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/nufailtd/terraform-budget-gcp&open_in_editor=seed_project/terraform.tfvars)
+
 Of course, the only correct answers on *how* we can meet the above criteria is by using;
 1. [Kubernetes](https://kubernetes.io/)
 2. [Terraform](https://www.terraform.io/)
@@ -113,4 +115,5 @@ The recommended way to set up the infrastructure is by using the listed GCP prod
 You should almost always observe this when deploying production workloads.
 Our choices have been deliberately made to cut down costs and sacrifice a number of features and some best practices to achieve our goal.
 However our efforts to extract maximum value from our resources have also led to some new and  interesting discoveries.
-Share your experience of deploying on Google Cloud Platform on a budget, which issues were encountered and what improvements can be made.
+Head on  over to this [repo](../../../terraform-budget-gcp) to create the infrastructure and share your experience of deploying on Google Cloud Platform on a budget, which issues were encountered and what improvements can be made.
+Head over to this repo to create the 
