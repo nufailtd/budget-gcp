@@ -63,13 +63,13 @@ We make use of the following excellent open source projects to aid us in our tas
 * [Chisel](https://github.com/jpillora/chisel) - Secure tunnelled connections into our cluster.
 * [ExternalDNS](https://github.com/kubernetes-sigs/external-dns) - Mapping our domain to our cluster.
 * [CertManager](https://cert-manager.io/) - Automatically creating certificates for our domains.
-* [Berglas](https://github.com/GoogleCloudPlatform/berglas) - Stor and retrieve secrets in Google Cloud.
+* [Berglas](https://github.com/GoogleCloudPlatform/berglas) - Store and retrieve secrets in Google Cloud.
 
 ## The What
 
 | Product | Purpose | Type | Cost $ | Our Choice | Our Cost $ | Notes |
 | :-- | :-- | :--|:-- |:-- |:-- |:-- |
-| [Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine) (GKE) | Manage our cluster of machines (nodes) and applications | Regional Cluster | 72.00 | Zonal Cluster |  0.00 |  A regional cluster is encouraged to mitigate against outages in a single zone but costs *72$*. The first zonal cluster is free. We will use a secure private cluster with no public ips and internet access by default. |
+| [Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine) (GKE) | Manage our cluster of machines (nodes) and applications | Regional Cluster | 72.00 | Zonal Cluster |  0.00 |  A regional cluster is encouraged to mitigate against outages in a single zone but costs *72$*. The first zonal cluster is free. We will use a secure private cluster with no public ips and no internet access by default. |
 | [Compute Engine](https://cloud.google.com/compute)  | These are the actual machines in our cluster. Our applications use resources in these machines. | e2-micro  | 6.11 | e2-micro pvm |  1.83 | We use the cheaper pre-emptible machines because GKE will take care of re-creating them when they are terminated |
 | [Cloud Load Balancer](https://cloud.google.com/load-balancing) | Route requests from our users to our applications in the cluster. | External | 18.00 | Google Container f1-micro | 0.00 | GCP provides an always free f1-micro instance. We will use this instance together with traefik to route [traefik](https://traefik.io/) into our cluster. |
 | [Cloud NAT](https://cloud.google.com/nat) | Access the internet from machines inside our cluster | Google Managed  | 1.008 | Custom NAT using f1-micro instance | 0.00| GCP provides an always free Public IP. We will use this IP attached to our free f1-micro as the next hop when connecting to the internet from our private cluster  |
