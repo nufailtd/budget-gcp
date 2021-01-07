@@ -58,8 +58,10 @@ In order to achieve our goal, we need to first identify the Cloud Provider offer
 Given that the Google Cloud Platform offers a generous free tier of products, we shall push our utility of these products to the maximum.
 
 We make use of the following excellent open source projects to aid us in our task. Give them a look sometime.
-* [Terraform](https://www.terraform.io/) - Storing and Managing access to our secrets.
+* [Terraform](https://www.terraform.io/) - Declaratively provision and manage or infrastructure.
+* [Vault](https://www.vaultproject.io/) - Storing and Managing access to our secrets.
 * [Traefik](https://traefik.io/) - Routing traffic to our cluster.
+* [Pomerium](https://www.pomerium.io/) - Secures access to our applications.
 * [Chisel](https://github.com/jpillora/chisel) - Secure tunnelled connections into our cluster.
 * [ExternalDNS](https://github.com/kubernetes-sigs/external-dns) - Mapping our domain to our cluster.
 * [CertManager](https://cert-manager.io/) - Automatically creating certificates for our domains.
@@ -79,7 +81,7 @@ We make use of the following excellent open source projects to aid us in our tas
 | [CloudSQL](https://cloud.google.com/sql) | MySQL Database for our Ghost Blog running in Cloudrun  | db-f1-micro | 10.17 | docker-mysql |0.00 | We will use a mysql docker container running in our free f1-micro instance. |
 | [Serverless VPC Access Connector](https://cloud.google.com/vpc/docs/serverless-vpc-access) | Access infrastructure in our Virtual Private Cloud from our Cloudrun services. | Google Managed| 6.11| [Chisel](https://github.com/jpillora/chisel) Tunnel |0.00 | We use [Chisel](https://github.com/jpillora/chisel) to create a secure tunnel from the f1-micro instance to any containers that may need access to resources in our private network  |
 | [Cloud IAP](https://cloud.google.com/iap) | Secures access to your applications using a single-sign-on flow.| Google Managed| 0.00 | Pomerium IAP |0.00 | We use [Pomerium](https://www.pomerium.io/) Identity Aware Proxy because it supports Google as well as external Identity Providers. |
-|Google Domains | Provides the address for your website | Any domain charged per year | 9.00 | Freenom | 0.00 | We use [Freenom](https://www.freenom.com) to obtain a free .tk, .ml, .ga, .cf or .gk domain.|
+| [Google Domains](https://domains.google/) | Provides the address for your website | Any domain charged per year | 9.00 | Freenom | 0.00 | We use [Freenom](https://www.freenom.com) to obtain a free .tk, .ml, .ga, .cf or .gk domain.|
 
 ## Monthly Cost Estimate
 
