@@ -46,7 +46,7 @@ The example below can be run by anyone, just click the button and you're good to
 However, understanding the terminology used in subsequent section requires some basic knowledge and/or prior experience of deploying an application.  
 You may safely skim if all this is new to you.
 
-[![Open this project in Cloud Shell](http://gstatic.com/cloudssh/images/open-btn.png)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/nufailtd/terraform-budget-gcp&open_in_editor=seed_project/main.tf)
+[![Open this project in Cloud Shell](http://gstatic.com/cloudssh/images/open-btn.png)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/nufailtd/terraform-budget-gcp&open_in_editor=seed_project/main.tf&cloudshell_working_dir=seed_project)
 
 Of course, the only correct answers on *how* we can meet the above criteria is by using;
 1. [Kubernetes](https://kubernetes.io/)
