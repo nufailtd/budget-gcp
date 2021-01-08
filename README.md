@@ -116,4 +116,3 @@ You should almost always observe this when deploying production workloads.
 Our choices have been deliberately made to cut down costs and sacrifice a number of features and some best practices to achieve our goal.
 However our efforts to extract maximum value from our resources have also led to some new and  interesting discoveries.
 Head on over to [**this repo**](../../../terraform-budget-gcp) to create the infrastructure and share your experience of deploying on Google Cloud Platform on a budget, which issues were encountered and what improvements can be made.
-Head over to this repo to create the 
