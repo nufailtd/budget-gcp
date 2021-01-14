@@ -46,7 +46,7 @@ The example below can be run by anyone, just click the button and you're good to
 However, understanding the terminology used in subsequent section requires some basic knowledge and/or prior experience of deploying an application.  
 You may safely skim if all this is new to you.
 
-[![Open this project in Cloud Shell](http://gstatic.com/cloudssh/images/open-btn.png)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/nufailtd/terraform-budget-gcp&open_in_editor=main.tf&cloudshell_workspace=seed_project)
+[![Open this project in Cloud Shell](http://gstatic.com/cloudssh/images/open-btn.png)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/nufailtd/terraform-budget-gcp&open_in_editor=README.md)
 
 Of course, the only correct answers on *how* we can meet the above criteria is by using;
 1. [Kubernetes](https://kubernetes.io/)
@@ -107,7 +107,7 @@ The estimate above assumes the following;
 * 1 Static IP
 * 1 Vault CloudRun Service
 * 1 Ghost Blog Cloud Run service
-* 6 Secret Versions
+* 6 Secret Versions  
 It also assumes that you will not be transferring massive amounts of data outside your cluster i.e. a test cluster so that network costs will stay well within the free tier.
 You may tweak these values to your liking but be wary of the cost implications.
 ## Summary
